@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../Components/Pages/Home/Home/Home";
+import Services from "../Components/Pages/Services/Services";
 
 export const router = createBrowserRouter([
   {
@@ -32,11 +33,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "services",
-        element: (
-          <div className="text-5xl flex justify-center items-center min-h-screen text-green-500 font-extrabold">
-            Services
-          </div>
-        ),
+        element: <Services/>
       },
       {
         path: "contact",
